@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ogc58sym0g71"]
+
+[ext_resource type="Texture2D" uid="uid://bik4j4ynjf2bc" path="res://assets/tileset.png" id="1_5s6cc"]
+[ext_resource type="PackedScene" uid="uid://blmmrrmijvkvf" path="res://scenes/point_light_2d_small.tscn" id="2_81o3h"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture = ExtResource("1_5s6cc")
+region_enabled = true
+region_rect = Rect2(16, 32, 16, 16)
+
+[node name="PointLight2D_Small2" parent="." instance=ExtResource("2_81o3h")]
+position = Vector2(3, 3)

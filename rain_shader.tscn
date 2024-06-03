@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ymso357wkaxq"]
+
+[ext_resource type="Shader" path="res://shaders/SimpleRain.gdshader" id="1_aj805"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nf673"]
+shader = ExtResource("1_aj805")
+shader_parameter/count = 200
+shader_parameter/slant = -0.1
+shader_parameter/speed = 25.0
+shader_parameter/blur = 0.0015
+shader_parameter/colour = Color(1, 1, 1, 1)
+shader_parameter/size = Vector2(0.007, 0.15)
+
+[node name="RainShader" type="ColorRect"]
+material = SubResource("ShaderMaterial_nf673")
+offset_left = -71.0
+offset_top = -224.0
+offset_right = 499.0
+offset_bottom = 17.0
